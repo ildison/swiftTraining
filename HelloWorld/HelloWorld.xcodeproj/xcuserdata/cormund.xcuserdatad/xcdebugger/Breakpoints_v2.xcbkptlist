@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloWorld/ViewController.swift"
+            timestampString = "602069313.949392"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.__deallocating_deinit"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069261.846082"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; HelloWorld.ViewController"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069261.847845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; HelloWorld.ViewController"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069261.849594"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;HelloWorld.ViewController&gt;"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069261.85154"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;HelloWorld.ViewController&gt;"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069261.853209"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloWorld/ViewController.swift"
+            timestampString = "602069313.9496551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.__deallocating_deinit"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069278.317637"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; HelloWorld.ViewController"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069278.319507"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; HelloWorld.ViewController"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069278.3213021"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;HelloWorld.ViewController&gt;"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069278.323083"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloWorld.ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;HelloWorld.ViewController&gt;"
+                  moduleName = "HelloWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cormund/Desktop/HelloWorld/HelloWorld/ViewController.swift"
+                  timestampString = "602069278.3246371"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloWorld/ViewController.swift"
+            timestampString = "602069313.949823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
