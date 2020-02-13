@@ -13,8 +13,21 @@ class ViewController: UIViewController {
     var dataArray = ["Sveta", "Ildar", "Bob"]
 
     @IBAction func pushAddAction(_ sender: Any) {
-        dataArray.append("NewElement")
-        tableView.reloadData()
+        let alert = UIAlertController(title: "Add elem", message: "ToDo", preferredStyle: UIAlertController.Style.alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "New elem"
+        }
+        let alertAction = UIAlertAction(title: "Add", style: UIAlertAction.Style.default) { (alertAction) in
+            self.dataArray.append(alert.textFields![0].text!)
+            self.tableView.reloadData()
+        }
+        
+        let alertAction2 = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+        
+        alert.addAction(alertAction)
+        alert.addAction(alertAction2)
+        
+        present(alert, animated: true, completion: nil)
     }
 
     @IBOutlet weak var tableView: UITableView!
