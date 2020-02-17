@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A3D495E23F581A300F83312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D495D23F581A300F83312 /* AppDelegate.swift */; };
-		1A3D496023F581A300F83312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D495F23F581A300F83312 /* ViewController.swift */; };
-		1A3D496323F581A300F83312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D496123F581A300F83312 /* Main.storyboard */; };
-		1A3D496523F581A300F83312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D496423F581A300F83312 /* Assets.xcassets */; };
-		1A3D496823F581A300F83312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D496623F581A300F83312 /* LaunchScreen.storyboard */; };
-		1AA4F2BC23FABB6B005DFF81 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4F2BB23FABB6B005DFF81 /* BorderButton.swift */; };
+		1A2691B023FA908800D798BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2691AF23FA908800D798BB /* AppDelegate.swift */; };
+		1A2691B223FA908800D798BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2691B123FA908800D798BB /* ViewController.swift */; };
+		1A2691B523FA908800D798BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2691B323FA908800D798BB /* Main.storyboard */; };
+		1A2691B723FA908800D798BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2691B623FA908800D798BB /* Assets.xcassets */; };
+		1A2691BA23FA908800D798BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2691B823FA908800D798BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A3D495A23F581A300F83312 /* Calculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3D495D23F581A300F83312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A3D495F23F581A300F83312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A3D496223F581A300F83312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A3D496423F581A300F83312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A3D496723F581A300F83312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A3D496923F581A300F83312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AA4F2BB23FABB6B005DFF81 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		1A2691AC23FA908800D798BB /* SmileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2691AF23FA908800D798BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A2691B123FA908800D798BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A2691B423FA908800D798BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A2691B623FA908800D798BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A2691B923FA908800D798BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A2691BB23FA908800D798BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A3D495723F581A200F83312 /* Frameworks */ = {
+		1A2691A923FA908800D798BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A3D495123F581A200F83312 = {
+		1A2691A323FA908800D798BB = {
 			isa = PBXGroup;
 			children = (
-				1A3D495C23F581A300F83312 /* Calculate */,
-				1A3D495B23F581A300F83312 /* Products */,
+				1A2691AE23FA908800D798BB /* SmileApp */,
+				1A2691AD23FA908800D798BB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A3D495B23F581A300F83312 /* Products */ = {
+		1A2691AD23FA908800D798BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A3D495A23F581A300F83312 /* Calculate.app */,
+				1A2691AC23FA908800D798BB /* SmileApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A3D495C23F581A300F83312 /* Calculate */ = {
+		1A2691AE23FA908800D798BB /* SmileApp */ = {
 			isa = PBXGroup;
 			children = (
-				1AA4F2BB23FABB6B005DFF81 /* BorderButton.swift */,
-				1A3D495D23F581A300F83312 /* AppDelegate.swift */,
-				1A3D495F23F581A300F83312 /* ViewController.swift */,
-				1A3D496123F581A300F83312 /* Main.storyboard */,
-				1A3D496423F581A300F83312 /* Assets.xcassets */,
-				1A3D496623F581A300F83312 /* LaunchScreen.storyboard */,
-				1A3D496923F581A300F83312 /* Info.plist */,
+				1A2691AF23FA908800D798BB /* AppDelegate.swift */,
+				1A2691B123FA908800D798BB /* ViewController.swift */,
+				1A2691B323FA908800D798BB /* Main.storyboard */,
+				1A2691B623FA908800D798BB /* Assets.xcassets */,
+				1A2691B823FA908800D798BB /* LaunchScreen.storyboard */,
+				1A2691BB23FA908800D798BB /* Info.plist */,
 			);
-			path = Calculate;
+			path = SmileApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A3D495923F581A200F83312 /* Calculate */ = {
+		1A2691AB23FA908800D798BB /* SmileApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3D496C23F581A300F83312 /* Build configuration list for PBXNativeTarget "Calculate" */;
+			buildConfigurationList = 1A2691BE23FA908800D798BB /* Build configuration list for PBXNativeTarget "SmileApp" */;
 			buildPhases = (
-				1A3D495623F581A200F83312 /* Sources */,
-				1A3D495723F581A200F83312 /* Frameworks */,
-				1A3D495823F581A200F83312 /* Resources */,
+				1A2691A823FA908800D798BB /* Sources */,
+				1A2691A923FA908800D798BB /* Frameworks */,
+				1A2691AA23FA908800D798BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Calculate;
-			productName = Calculate;
-			productReference = 1A3D495A23F581A300F83312 /* Calculate.app */;
+			name = SmileApp;
+			productName = SmileApp;
+			productReference = 1A2691AC23FA908800D798BB /* SmileApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A3D495223F581A200F83312 /* Project object */ = {
+		1A2691A423FA908800D798BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Chugtai Ormund";
 				TargetAttributes = {
-					1A3D495923F581A200F83312 = {
+					1A2691AB23FA908800D798BB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 1A3D495523F581A200F83312 /* Build configuration list for PBXProject "Calculate" */;
+			buildConfigurationList = 1A2691A723FA908800D798BB /* Build configuration list for PBXProject "SmileApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 1A3D495123F581A200F83312;
-			productRefGroup = 1A3D495B23F581A300F83312 /* Products */;
+			mainGroup = 1A2691A323FA908800D798BB;
+			productRefGroup = 1A2691AD23FA908800D798BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A3D495923F581A200F83312 /* Calculate */,
+				1A2691AB23FA908800D798BB /* SmileApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A3D495823F581A200F83312 /* Resources */ = {
+		1A2691AA23FA908800D798BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3D496823F581A300F83312 /* LaunchScreen.storyboard in Resources */,
-				1A3D496523F581A300F83312 /* Assets.xcassets in Resources */,
-				1A3D496323F581A300F83312 /* Main.storyboard in Resources */,
+				1A2691BA23FA908800D798BB /* LaunchScreen.storyboard in Resources */,
+				1A2691B723FA908800D798BB /* Assets.xcassets in Resources */,
+				1A2691B523FA908800D798BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A3D495623F581A200F83312 /* Sources */ = {
+		1A2691A823FA908800D798BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3D496023F581A300F83312 /* ViewController.swift in Sources */,
-				1A3D495E23F581A300F83312 /* AppDelegate.swift in Sources */,
-				1AA4F2BC23FABB6B005DFF81 /* BorderButton.swift in Sources */,
+				1A2691B223FA908800D798BB /* ViewController.swift in Sources */,
+				1A2691B023FA908800D798BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A3D496123F581A300F83312 /* Main.storyboard */ = {
+		1A2691B323FA908800D798BB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A3D496223F581A300F83312 /* Base */,
+				1A2691B423FA908800D798BB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1A3D496623F581A300F83312 /* LaunchScreen.storyboard */ = {
+		1A2691B823FA908800D798BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A3D496723F581A300F83312 /* Base */,
+				1A2691B923FA908800D798BB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1A3D496A23F581A300F83312 /* Debug */ = {
+		1A2691BC23FA908800D798BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		1A3D496B23F581A300F83312 /* Release */ = {
+		1A2691BD23FA908800D798BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,28 +270,28 @@
 			};
 			name = Release;
 		};
-		1A3D496D23F581A300F83312 /* Debug */ = {
+		1A2691BF23FA908800D798BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculate/Info.plist;
+				INFOPLIST_FILE = SmileApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "School-21.Calculate";
+				PRODUCT_BUNDLE_IDENTIFIER = "School-21.SmileApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1A3D496E23F581A300F83312 /* Release */ = {
+		1A2691C023FA908800D798BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculate/Info.plist;
+				INFOPLIST_FILE = SmileApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "School-21.Calculate";
+				PRODUCT_BUNDLE_IDENTIFIER = "School-21.SmileApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,25 +301,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A3D495523F581A200F83312 /* Build configuration list for PBXProject "Calculate" */ = {
+		1A2691A723FA908800D798BB /* Build configuration list for PBXProject "SmileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A3D496A23F581A300F83312 /* Debug */,
-				1A3D496B23F581A300F83312 /* Release */,
+				1A2691BC23FA908800D798BB /* Debug */,
+				1A2691BD23FA908800D798BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A3D496C23F581A300F83312 /* Build configuration list for PBXNativeTarget "Calculate" */ = {
+		1A2691BE23FA908800D798BB /* Build configuration list for PBXNativeTarget "SmileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A3D496D23F581A300F83312 /* Debug */,
-				1A3D496E23F581A300F83312 /* Release */,
+				1A2691BF23FA908800D798BB /* Debug */,
+				1A2691C023FA908800D798BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1A3D495223F581A200F83312 /* Project object */;
+	rootObject = 1A2691A423FA908800D798BB /* Project object */;
 }
