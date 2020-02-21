@@ -18,6 +18,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var stack = [String]()
+    var lastOper: String = ""
     
     @IBOutlet weak var elementsLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
@@ -47,17 +48,25 @@ class ViewController: UIViewController {
     @IBAction func opers(_ sender: UIButton) {
         let oper = ["+", "-", "x", "÷"]
         guard let number = resultLabel.text else { return }
+
         if number != "0" && number != "-0" {
             join(number, elementsLabel)
+            if !lastOper.isEmpty {
+                stack.append(oper[sender.tag])
+            }
             stack.append(number)
             resultLabel.text = "0"
         }
-        else if elementsLabel.text!.count > 2 {
+        else if !stack.isEmpty {
             elementsLabel.text?.removeLast(3)
-            stack.removeLast()
+//            stack.removeLast()
         }
-        join(" \(oper[sender.tag]) ", elementsLabel)
-        stack.append(oper[sender.tag])
+        if !stack.isEmpty {
+            join(" \(oper[sender.tag]) ", elementsLabel)
+            lastOper = oper[sender.tag]
+//            stack.append(oper[sender.tag])
+        }
+        print(stack)
     }
 
     @IBAction func plusMinus() {
