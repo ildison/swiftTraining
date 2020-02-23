@@ -19,9 +19,11 @@ class ViewController: UIViewController {
     
     var stack = [String]()
     var lastOper: String = ""
+    var ac = true
     
     @IBOutlet weak var elementsLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var clear: UIButton!
     
     func join(_ appended: String, _ label: UILabel) {
         if label.text == "0" {
@@ -37,6 +39,10 @@ class ViewController: UIViewController {
 
     @IBAction func numbers(_ sender: UIButton) {
         join(String(sender.tag), resultLabel)
+        if sender.tag != 0 && ac == true {
+            ac = false
+            clear.setTitle("C", for: .normal)
+        }
     }
 
     @IBAction func dot() {
@@ -82,12 +88,20 @@ class ViewController: UIViewController {
     @IBAction func percent() {
     }
     @IBAction func result() {
-
     }
     
     
     @IBAction func clearResult(_ sender: UIButton) {
-        resultLabel.text = "0"
+        if ac == false {
+            resultLabel.text = "0"
+            ac = true
+            clear.setTitle("AC", for: .normal)
+        }
+        else {
+            elementsLabel.text = "0"
+            stack.removeAll()
+            lastOper = ""
+        }
     }
     
 }

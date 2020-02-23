@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AppleSDGothicNeo.ttc">
-            <string>AppleSDGothicNeo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -30,20 +22,13 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-v6-ytK">
                                         <rect key="frame" x="1" y="0.0" width="321" height="74"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Hn-JJC" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Hn-JJC" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="74.5" height="74"/>
                                                 <color key="backgroundColor" red="0.33541151881217957" green="0.32781782746315002" blue="0.77209579944610596" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="C">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <font key="NSFont" size="24" name="AppleSDGothicNeo-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                <state key="normal" title="AC">
+                                                    <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -52,7 +37,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="clearResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xrd-fJ-Fbp"/>
-                                                    <action selector="toclear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sn1-gD-Oa3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qH-zI-o9q" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
@@ -390,7 +374,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SHG-LY-7ww">
-                                <rect key="frame" x="27" y="130" width="321" height="21.5"/>
+                                <rect key="frame" x="65" y="130" width="283" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -401,15 +385,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MOON" translatesAutoresizingMaskIntoConstraints="NO" id="SgS-Ch-O9Y">
+                                <rect key="frame" x="27" y="125.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Nf-wU-06o"/>
+                                    <constraint firstAttribute="width" constant="30" id="36y-MU-Ml0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="SHG-LY-7ww" firstAttribute="leading" secondItem="4V3-lE-uti" secondAttribute="leading" id="2rp-Ar-oeT"/>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="top" secondItem="SHG-LY-7ww" secondAttribute="bottom" constant="8" id="4iG-sF-p7S"/>
+                            <constraint firstItem="SgS-Ch-O9Y" firstAttribute="leading" secondItem="0eE-Hn-JJC" secondAttribute="leading" id="8vQ-Zp-hbj"/>
+                            <constraint firstItem="SHG-LY-7ww" firstAttribute="leading" secondItem="SgS-Ch-O9Y" secondAttribute="trailing" constant="8" id="96z-sc-g5m"/>
                             <constraint firstItem="c2M-CH-0VA" firstAttribute="top" secondItem="4V3-lE-uti" secondAttribute="bottom" constant="8" id="HbK-t9-UCv"/>
+                            <constraint firstItem="SgS-Ch-O9Y" firstAttribute="centerY" secondItem="SHG-LY-7ww" secondAttribute="centerY" id="Jxy-6J-ZZg"/>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="trailing" secondItem="c2M-CH-0VA" secondAttribute="trailing" id="NwQ-ll-KLt"/>
                             <constraint firstItem="BfB-Sj-viQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="RIF-IO-7Sd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfB-Sj-viQ" secondAttribute="trailing" constant="26" id="UjH-FR-WXn"/>
+                            <constraint firstItem="SHG-LY-7ww" firstAttribute="leading" secondItem="SgS-Ch-O9Y" secondAttribute="trailing" constant="8" id="V4m-xK-YER"/>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="leading" secondItem="0eE-Hn-JJC" secondAttribute="leading" id="a5j-gd-aER"/>
                             <constraint firstItem="SHG-LY-7ww" firstAttribute="trailing" secondItem="4V3-lE-uti" secondAttribute="trailing" id="blg-sP-KP9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BfB-Sj-viQ" secondAttribute="bottom" constant="20" id="gcx-ue-2I4"/>
@@ -417,13 +411,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="clear" destination="0eE-Hn-JJC" id="zhP-03-Pf2"/>
                         <outlet property="elementsLabel" destination="SHG-LY-7ww" id="gTf-dh-uN0"/>
                         <outlet property="resultLabel" destination="4V3-lE-uti" id="dcL-Fj-8I3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="133.09859154929578"/>
+            <point key="canvasLocation" x="133.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MOON" width="35" height="36"/>
+    </resources>
 </document>
