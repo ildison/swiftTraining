@@ -7,13 +7,7 @@
 //
 
 import UIKit
-//
-//enum oper {
-//    case add
-//    case sub
-//    case mul
-//    case div
-//}
+
 
 class ViewController: UIViewController {
     
@@ -25,23 +19,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var clear: UIButton!
     
-    func join(_ appended: String, _ label: UILabel) {
-        if label.text == "0" {
+    func joinInLabel(_ appended: String, _ label: UILabel) {
+        if label.text == "0" && appended.count != 3 {
             label.text = appended
         }
-        else if label.text != "-0" {
+        else if label == elementsLabel || label.text != "-0" {
             label.text?.append(appended)
         }
-        else {
+        else if label == resultLabel && label.text == "-0" {
             label.text = "-" + appended
         }
     }
 
     @IBAction func numbers(_ sender: UIButton) {
-        join(String(sender.tag), resultLabel)
+        joinInLabel(String(sender.tag), resultLabel)
         if sender.tag != 0 && ac == true {
             ac = false
             clear.setTitle("C", for: .normal)
+        }
+        if !lastOper.isEmpty {
+            stack.append(lastOper)
+            lastOper = ""
         }
     }
 
@@ -49,26 +47,35 @@ class ViewController: UIViewController {
         if resultLabel.text?.contains(".") == false {
             resultLabel.text?.append(".")
         }
+        if ac == true {
+            ac = false
+            clear.setTitle("C", for: .normal)
+        }
     }
     
     @IBAction func opers(_ sender: UIButton) {
         let oper = ["+", "-", "x", "÷"]
-        guard let number = resultLabel.text else { return }
+        guard var number = resultLabel.text else { return }
 
-        if number != "0" && number != "-0" {
-            join(number, elementsLabel)
-            if !lastOper.isEmpty {
-                stack.append(oper[sender.tag])
-            }
+        if number.last == "." {
+            number.removeLast()
+            resultLabel.text?.removeLast()
+        }
+//        if number != "0" && number != "-0" {
+        if lastOper.isEmpty {
+            joinInLabel(number, elementsLabel)
+//            if !lastOper.isEmpty {
+//                stack.append(oper[sender.tag])
+//            }
             stack.append(number)
             resultLabel.text = "0"
         }
-        else if !stack.isEmpty {
+        else {
             elementsLabel.text?.removeLast(3)
 //            stack.removeLast()
         }
         if !stack.isEmpty {
-            join(" \(oper[sender.tag]) ", elementsLabel)
+            joinInLabel(" \(oper[sender.tag]) ", elementsLabel)
             lastOper = oper[sender.tag]
 //            stack.append(oper[sender.tag])
         }
@@ -99,6 +106,7 @@ class ViewController: UIViewController {
         }
         else {
             elementsLabel.text = "0"
+            resultLabel.text = "0"
             stack.removeAll()
             lastOper = ""
         }
