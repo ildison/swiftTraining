@@ -208,6 +208,7 @@ class ViewController: UIViewController {
             calc.stack.removeAll()
             calc.lastOper = ""
             errorStatus = false
+            resultStatus = false
         }
     }
 }
