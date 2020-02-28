@@ -20,7 +20,7 @@ class Calculate {
         guard let firstCharacter = checked.first else {
             return false
         }
-        return firstCharacter >= "0" && firstCharacter <= "9"
+        return (firstCharacter >= "0" && firstCharacter <= "9") || firstCharacter == "-"
     }
     
     private func  executeOper(oper: String, num1: Double, num2: Double) throws -> String {
