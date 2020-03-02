@@ -401,7 +401,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJx-xq-URr">
-                                <rect key="frame" x="27" y="160" width="321" height="76.5"/>
+                                <rect key="frame" x="27" y="159.5" width="321" height="76.5"/>
                                 <connections>
                                     <action selector="removeLastInResultLabel" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1Y-Cu-FdP"/>
                                 </connections>

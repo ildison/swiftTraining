@@ -68,7 +68,6 @@ class Calculate {
     func result() -> String {
         var countElems = stack.count
 
-        print(stack)
         while countElems > 1 {
             guard let num1 = Double(stack.removeFirst()) else { return ""}
             let oper = stack.removeFirst()
@@ -198,7 +197,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func removeLastInResultLabel() {
-        print("here")
         if errorStatus == true || resultStatus == true { return }
         guard let count = resultLabel.text?.count else { return }
         guard let number = resultLabel.text else { return }
