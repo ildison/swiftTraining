@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -303,7 +311,7 @@
                                         <rect key="frame" x="1" y="329" width="321" height="74"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88P-YM-TOw" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="74"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="74"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
@@ -322,7 +330,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgS-dY-qo6" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
-                                                <rect key="frame" x="164.5" y="0.0" width="74.5" height="74"/>
+                                                <rect key="frame" x="164" y="0.0" width="75" height="74"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                                 <state key="normal" title=".">
@@ -392,14 +400,23 @@
                                     <constraint firstAttribute="width" constant="30" id="36y-MU-Ml0"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJx-xq-URr">
+                                <rect key="frame" x="27" y="160" width="321" height="76.5"/>
+                                <connections>
+                                    <action selector="removeLastInResultLabel" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1Y-Cu-FdP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="top" secondItem="SHG-LY-7ww" secondAttribute="bottom" constant="8" id="4iG-sF-p7S"/>
+                            <constraint firstItem="wJx-xq-URr" firstAttribute="centerY" secondItem="4V3-lE-uti" secondAttribute="centerY" id="4im-pn-Qvy"/>
                             <constraint firstItem="SgS-Ch-O9Y" firstAttribute="leading" secondItem="0eE-Hn-JJC" secondAttribute="leading" id="8vQ-Zp-hbj"/>
                             <constraint firstItem="SHG-LY-7ww" firstAttribute="leading" secondItem="SgS-Ch-O9Y" secondAttribute="trailing" constant="8" id="96z-sc-g5m"/>
+                            <constraint firstItem="wJx-xq-URr" firstAttribute="leading" secondItem="4V3-lE-uti" secondAttribute="leading" id="Ejf-ge-flC"/>
                             <constraint firstItem="c2M-CH-0VA" firstAttribute="top" secondItem="4V3-lE-uti" secondAttribute="bottom" constant="8" id="HbK-t9-UCv"/>
                             <constraint firstItem="SgS-Ch-O9Y" firstAttribute="centerY" secondItem="SHG-LY-7ww" secondAttribute="centerY" id="Jxy-6J-ZZg"/>
+                            <constraint firstItem="wJx-xq-URr" firstAttribute="trailing" secondItem="4V3-lE-uti" secondAttribute="trailing" id="Ncs-fa-82C"/>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="trailing" secondItem="c2M-CH-0VA" secondAttribute="trailing" id="NwQ-ll-KLt"/>
                             <constraint firstItem="BfB-Sj-viQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="RIF-IO-7Sd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfB-Sj-viQ" secondAttribute="trailing" constant="26" id="UjH-FR-WXn"/>
@@ -407,6 +424,7 @@
                             <constraint firstItem="4V3-lE-uti" firstAttribute="leading" secondItem="0eE-Hn-JJC" secondAttribute="leading" id="a5j-gd-aER"/>
                             <constraint firstItem="SHG-LY-7ww" firstAttribute="trailing" secondItem="4V3-lE-uti" secondAttribute="trailing" id="blg-sP-KP9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BfB-Sj-viQ" secondAttribute="bottom" constant="20" id="gcx-ue-2I4"/>
+                            <constraint firstItem="wJx-xq-URr" firstAttribute="height" secondItem="4V3-lE-uti" secondAttribute="height" id="rwy-7Q-uWy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -197,6 +197,22 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func removeLastInResultLabel() {
+        print("here")
+        if errorStatus == true || resultStatus == true { return }
+        guard let count = resultLabel.text?.count else { return }
+        guard let number = resultLabel.text else { return }
+        if count > 1 && number != "-0"  {
+            resultLabel.text?.removeLast()
+        }
+        else if count == 1 || number == "-0" {
+            resultLabel.text = "0"
+        }
+        if count == 2 && number.first == "-" && number != "-0" {
+            resultLabel.text?.append("0")
+        }
+    }
+    
     @IBAction func clearResult(_ sender: UIButton) {
         if ac == false {
             resultLabel.text = "0"
@@ -212,4 +228,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
