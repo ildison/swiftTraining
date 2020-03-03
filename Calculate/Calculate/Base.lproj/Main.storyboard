@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AppleSDGothicNeo.ttc">
-            <string>AppleSDGothicNeo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -33,7 +25,7 @@
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Hn-JJC" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="74.5" height="74"/>
                                                 <color key="backgroundColor" red="0.33541151881217957" green="0.32781782746315002" blue="0.77209579944610596" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -50,8 +42,11 @@
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qH-zI-o9q" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="82.5" y="0.0" width="74" height="74"/>
                                                 <color key="backgroundColor" red="0.33541151879999997" green="0.32781782749999999" blue="0.77209579939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
-                                                <state key="normal" title="+/-">
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal">
+                                                    <string key="title">±
+PLUS-MINUS SIGN
+Unicode: U+00B1, UTF-8: C2 B1</string>
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -66,7 +61,7 @@
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-Jx-1Gi" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="164.5" y="0.0" width="74.5" height="74"/>
                                                 <color key="backgroundColor" red="0.33541151879999997" green="0.32781782749999999" blue="0.77209579939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -82,8 +77,11 @@
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2M-CH-0VA" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="247" y="0.0" width="74" height="74"/>
                                                 <color key="backgroundColor" red="0.33541151879999997" green="0.32781782749999999" blue="0.77209579939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
-                                                <state key="normal" title="÷">
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal">
+                                                    <string key="title">÷
+DIVISION SIGN
+Unicode: U+00F7, UTF-8: C3 B7</string>
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -103,7 +101,7 @@
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-3R-xvS" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="74.5" height="74.5"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -119,7 +117,7 @@
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWy-Uv-E74" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="82.5" y="0.0" width="74" height="74.5"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -135,7 +133,7 @@
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1of-3S-CsF" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="164.5" y="0.0" width="74.5" height="74.5"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -151,8 +149,11 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-nj-OIM" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="247" y="0.0" width="74" height="74.5"/>
                                                 <color key="backgroundColor" red="0.33541151879999997" green="0.32781782749999999" blue="0.77209579939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
-                                                <state key="normal" title="x">
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal">
+                                                    <string key="title">×
+MULTIPLICATION SIGN
+Unicode: U+00D7, UTF-8: C3 97</string>
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -204,7 +205,7 @@
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlB-63-Xkd" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="164.5" y="0.0" width="74.5" height="74"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -220,8 +221,11 @@
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpY-xT-MIH" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="247" y="0.0" width="74" height="74"/>
                                                 <color key="backgroundColor" red="0.33541151879999997" green="0.32781782749999999" blue="0.77209579939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
-                                                <state key="normal" title="-">
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal">
+                                                    <string key="title">−
+MINUS SIGN
+Unicode: U+2212, UTF-8: E2 88 92</string>
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -244,7 +248,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="YJT-MB-ltq" secondAttribute="height" id="HSu-pa-ojE"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -260,7 +264,7 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1s-GJ-ZXZ" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="82.5" y="0.0" width="74" height="74.5"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -276,7 +280,7 @@
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45f-kk-iXW" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="164.5" y="0.0" width="74.5" height="74.5"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -292,8 +296,11 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-gw-J3s" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="247" y="0.0" width="74" height="74.5"/>
                                                 <color key="backgroundColor" red="0.33541151879999997" green="0.32781782749999999" blue="0.77209579939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
-                                                <state key="normal" title="+">
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal">
+                                                    <string key="title">+
+PLUS SIGN
+Unicode: U+002B, UTF-8: 2B</string>
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -311,7 +318,7 @@
                                         <rect key="frame" x="1" y="329" width="321" height="74"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88P-YM-TOw" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="156" height="74"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="74"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
@@ -330,9 +337,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgS-dY-qo6" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
-                                                <rect key="frame" x="164" y="0.0" width="75" height="74"/>
+                                                <rect key="frame" x="164.5" y="0.0" width="74.5" height="74"/>
                                                 <color key="backgroundColor" red="0.26044833660125732" green="0.25550860166549683" blue="0.60359323024749756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -348,7 +355,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuQ-73-Xju" customClass="BorderButton" customModule="Calculate" customModuleProvider="target">
                                                 <rect key="frame" x="247" y="0.0" width="74" height="74"/>
                                                 <color key="backgroundColor" red="0.60112786293029785" green="0.59507137537002563" blue="0.91723781824111938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
