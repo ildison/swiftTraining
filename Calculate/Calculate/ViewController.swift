@@ -38,13 +38,33 @@ class Calculate {
             throw error.Error
         }
     }
+    
+    func isPercent(_ num: String) -> Bool {
+        return num.last == "%"
+    }
+    
+    func searchPercent(value: Double, from number: String) -> Double {
+        guard let num = Double(number.filter({$0 != "%"})) else { return 0 }
+        return num / 100 * value
+    }
+    
+    func getNumber(_ number:String) -> Double {
+        if isPercent(number) {
+            return searchPercent(value: 1, from: number)
+        }
+        else {
+            guard let num = Double(number) else { return 0 }
+            return num
+        }
+    }
 
     func addInStack(_ elem: String) throws {
         if isNumber(elem) && !stack.isEmpty && (stack.last == "x" || stack.last == "÷") {
             let oper = stack.removeLast()
-            guard let num1 = Double(stack.removeLast()) else { return }
-            guard let num2 = Double(elem) else { return }
-            guard let appended = try? executeOper(oper: oper, num1: num1, num2: num2) else { throw error.Error}
+            let num1 = getNumber(stack.removeLast())
+            let num2 = getNumber(elem)
+            guard let appended = try? executeOper(oper: oper, num1: num1, num2: num2) else {
+                throw error.Error}
             stack.append(appended)
         }
         else {
@@ -58,10 +78,12 @@ class Calculate {
         var lenZero = 0
 
         for elem in revNum {
-            if elem != "0" { break }
             lenZero += 1
+            if elem != "0" { break }
         }
-        revNum.removeFirst(lenZero + 1)
+        if lenZero > 1 {
+            revNum.removeFirst(lenZero)
+        }
         return String(revNum.reversed())
     }
     
@@ -69,13 +91,19 @@ class Calculate {
         var countElems = stack.count
 
         while countElems > 1 {
-            guard let num1 = Double(stack.removeFirst()) else { return ""}
+            let num1 = getNumber(stack.removeFirst())
             let oper = stack.removeFirst()
-            guard let num2 = Double(stack.removeFirst()) else { return ""}
+            let num2: Double
+            if isPercent(stack.last ?? "0") {
+                num2 = searchPercent(value: num1, from: stack.removeFirst())
+            }
+            else {
+                num2 = getNumber(stack.removeFirst())
+            }
             stack.insert(try! executeOper(oper: oper, num1: num1, num2: num2), at: 0)
             countElems -= 2
         }
-        return roundNumer(stack.removeFirst())
+        return roundNumer(String(getNumber(stack.removeFirst())))
     }
 }
 
@@ -85,6 +113,7 @@ class ViewController: UIViewController {
     var ac = true
     var errorStatus = false
     var resultStatus = false
+    var percentStatus = false
     
     @IBOutlet weak var elementsLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
@@ -113,7 +142,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numbers(_ sender: UIButton) {
-        if errorStatus == true || resultStatus == true { return }
+        if errorStatus == true || resultStatus == true || percentStatus == true { return }
         joinInLabel(String(sender.tag), resultLabel)
         if sender.tag != 0 && ac == true {
             turnAc(to: false)
@@ -125,7 +154,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dot() {
-        if errorStatus == true || resultStatus == true { return }
+        if errorStatus == true || resultStatus == true || percentStatus == true { return }
         if resultLabel.text?.contains(".") == false {
             resultLabel.text?.append(".")
         }
@@ -141,7 +170,7 @@ class ViewController: UIViewController {
             number.removeLast()
             resultLabel.text?.removeLast()
         }
-        if calc.lastOper.isEmpty {
+        if calc.lastOper.isEmpty && percentStatus == false {
             joinInLabel(number, elementsLabel)
             if ((try? calc.addInStack(number)) != nil) {
                 resultLabel.text = "0"
@@ -152,7 +181,7 @@ class ViewController: UIViewController {
                 errorStatus = true
             }
         }
-        else {
+        else if percentStatus == false {
             elementsLabel.text?.removeLast(3)
         }
     }
@@ -161,7 +190,12 @@ class ViewController: UIViewController {
         if errorStatus == true { return }
         if resultStatus == true { resultStatus = false }
         let oper = ["+", "-", "x", "÷"]
-        checkNumberBeforAppOper()
+        if percentStatus == true {
+            percentStatus = false
+        }
+        else {
+            checkNumberBeforAppOper()
+        }
         if !calc.stack.isEmpty {
             joinInLabel(" \(oper[sender.tag]) ", elementsLabel)
             calc.lastOper = oper[sender.tag]
@@ -169,7 +203,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func plusMinus() {
-        if errorStatus == true || resultStatus == true { return }
+        if errorStatus == true || resultStatus == true || percentStatus == true { return }
         guard let num = resultLabel.text else { return }
         if num.first == "-" {
             resultLabel.text?.removeFirst()
@@ -180,6 +214,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func percent() {
+        if errorStatus == true || resultStatus == true { return }
+        guard let number = resultLabel.text else { return }
+        if number == "0" || number == "0" { return }
+        joinInLabel("%", resultLabel)
+        if !calc.lastOper.isEmpty {
+            try! calc.addInStack(calc.lastOper)
+            calc.lastOper = ""
+        }
+        checkNumberBeforAppOper()
+        percentStatus = true
     }
 
     @IBAction func result() {
@@ -192,6 +236,7 @@ class ViewController: UIViewController {
                 calc.lastOper = ""
                 turnAc(to: true)
                 resultStatus = true
+                percentStatus = false
             }
         }
     }
@@ -223,6 +268,7 @@ class ViewController: UIViewController {
             calc.lastOper = ""
             errorStatus = false
             resultStatus = false
+            percentStatus = false
         }
     }
 }
