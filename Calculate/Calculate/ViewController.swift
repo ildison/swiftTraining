@@ -23,7 +23,7 @@ class Calculate {
         return (firstCharacter >= "0" && firstCharacter <= "9") || firstCharacter == "-"
     }
     
-    private func  executeOper(oper: String, num1: Double, num2: Double) throws -> String {
+    private func  executeOper(oper: String, num1: Float, num2: Float) throws -> String {
         switch oper {
         case "+":
             return "\(num1 + num2)"
@@ -43,17 +43,17 @@ class Calculate {
         return num.last == "%"
     }
     
-    func searchPercent(value: Double, from number: String) -> Double {
-        guard let num = Double(number.filter({$0 != "%"})) else { return 0 }
+    func searchPercent(value: Float, from number: String) -> Float {
+        guard let num = Float(number.filter({$0 != "%"})) else { return 0 }
         return num / 100 * value
     }
     
-    func getNumber(_ number:String) -> Double {
+    func getNumber(_ number:String) -> Float {
         if isPercent(number) {
             return searchPercent(value: 1, from: number)
         }
         else {
-            guard let num = Double(number) else { return 0 }
+            guard let num = Float(number) else { return 0 }
             return num
         }
     }
@@ -93,7 +93,7 @@ class Calculate {
         while countElems > 1 {
             let num1 = getNumber(stack.removeFirst())
             let oper = stack.removeFirst()
-            let num2: Double
+            let num2: Float
             if isPercent(stack.last ?? "0") {
                 num2 = searchPercent(value: num1, from: stack.removeFirst())
             }
