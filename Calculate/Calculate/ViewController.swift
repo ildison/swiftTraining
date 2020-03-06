@@ -170,6 +170,7 @@ class ViewController: UIViewController {
             number.removeLast()
             resultLabel.text?.removeLast()
         }
+        if number == "-0" { number = "0" }
         if calc.lastOper.isEmpty && percentStatus == false {
             joinInLabel(number, elementsLabel)
             if ((try? calc.addInStack(number)) != nil) {
