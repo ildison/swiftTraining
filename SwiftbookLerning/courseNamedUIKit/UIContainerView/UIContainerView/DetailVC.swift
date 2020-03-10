@@ -56,7 +56,7 @@ class DetailVC: UITableViewController {
         if let viewController = parent as? ViewController {
             let trackTitle = imageNameArray[indexPath.row]
             viewController.labelCover.text = trackTitle
-            viewController.imageCover.image = UIImage(trackTitle)
+            viewController.imageCover.image = UIImage(named: trackTitle)
         }
         
         

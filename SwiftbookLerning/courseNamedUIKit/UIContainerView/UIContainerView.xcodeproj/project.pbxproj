@@ -13,6 +13,7 @@
 		1F12014D2417D58F00A009E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F12014B2417D58F00A009E1 /* Main.storyboard */; };
 		1F12014F2417D59100A009E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F12014E2417D59100A009E1 /* Assets.xcassets */; };
 		1F1201522417D59100A009E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1201502417D59100A009E1 /* LaunchScreen.storyboard */; };
+		1F12015A2417D82D00A009E1 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1201592417D82D00A009E1 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1F12014E2417D59100A009E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F1201512417D59100A009E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F1201532417D59100A009E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F1201592417D82D00A009E1 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1F1201472417D58F00A009E1 /* SceneDelegate.swift */,
 				1F1201492417D58F00A009E1 /* ViewController.swift */,
 				1F12014B2417D58F00A009E1 /* Main.storyboard */,
+				1F1201592417D82D00A009E1 /* DetailVC.swift */,
 				1F12014E2417D59100A009E1 /* Assets.xcassets */,
 				1F1201502417D59100A009E1 /* LaunchScreen.storyboard */,
 				1F1201532417D59100A009E1 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F12014A2417D58F00A009E1 /* ViewController.swift in Sources */,
+				1F12015A2417D82D00A009E1 /* DetailVC.swift in Sources */,
 				1F1201462417D58F00A009E1 /* AppDelegate.swift in Sources */,
 				1F1201482417D58F00A009E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "School-21.UIContainerView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "School-21.UIContainerView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
