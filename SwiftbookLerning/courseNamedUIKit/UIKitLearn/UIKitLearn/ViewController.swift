@@ -13,17 +13,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var outletActivityIndecator: UIActivityIndicatorView!
+    @IBOutlet weak var progressView: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textView.text = ""
+//        textView.text = ""
         textView.delegate = self
+        
+        textView.isHidden = true
+//        textView.alpha = 0
         
         textView.font = UIFont(name: "Futura-Medium", size: 17)
         textView.backgroundColor = self.view.backgroundColor
         textView.layer.cornerRadius = 10
         
+        stepper.value = 17
+        stepper.minimumValue = 10
+        stepper.maximumValue = 25
+        
+        outletActivityIndecator.hidesWhenStopped = true
+        outletActivityIndecator.color = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        outletActivityIndecator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents() // старт запрета на какие-либо действия во время загрузки
+        
+        progressView.setProgress(0, animated: true)
+
         // отслеживаем появление клавиатуры
         NotificationCenter.default.addObserver(self, selector: #selector(updateTextView(notification:)),
                                                name: Notification.Name.UIKeyboardWillChangeFrame,
@@ -32,6 +49,26 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(updateTextView(notification:)),
                                                name: Notification.Name.UIKeyboardWillHide,
                                                object: nil)
+        
+//        UIView.animate(withDuration: 0, delay: 5, options: .allowAnimatedContent, animations: {
+//            self.textView.alpha = 1
+//        }) { (finishined) in
+//            self.outletActivityIndecator.stopAnimating()
+//            self.textView.isHidden = false
+//            UIApplication.shared.endIgnoringInteractionEvents()
+//        }
+        
+        Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { (_) in
+            if self.progressView.progress < 1 {
+                self.progressView.progress += 0.025
+            } else {
+                self.outletActivityIndecator.stopAnimating()
+                self.textView.isHidden = false
+                UIApplication.shared.endIgnoringInteractionEvents()
+                self.progressView.isHidden = true
+            }
+        }
+        
     }
 
     @objc func  updateTextView(notification: Notification) {
@@ -63,6 +100,12 @@ class ViewController: UIViewController {
 //        textView.resignFirstResponder() // скрывает клав-ру для конкретного объекта
     }
 
+    @IBAction func sizeFont(_ sender: UIStepper) {
+        let font = textView.font?.fontName
+        let fontSize = CGFloat(sender.value)
+        
+        textView.font = UIFont(name: font!, size: fontSize)
+    }
 }
 
 extension ViewController: UITextViewDelegate {
