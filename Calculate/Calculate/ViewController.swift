@@ -110,14 +110,36 @@ class Calculate {
 class ViewController: UIViewController {
 
     var calc = Calculate()
+    var calcTheme = CalculateTheme()
+    let defaults = UserDefaults.standard
+    var styleTheme = ""
     var ac = true
     var errorStatus = false
     var resultStatus = false
     var percentStatus = false
     
+    @IBOutlet var background: UIView!
     @IBOutlet weak var elementsLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var clear: UIButton!
+    @IBOutlet var numberButtons: [BorderButton]!
+    @IBOutlet var operButtons: [BorderButton]!
+    @IBOutlet weak var resultButton: BorderButton!
+    @IBOutlet weak var imageTheme: UIImageView!
+    
+    override func viewDidLoad() {
+        styleTheme = defaults.string(forKey: "style") ?? "dark"
+        defaults.set(styleTheme, forKey: "style")
+        
+        calcTheme.vc = self
+        calcTheme.setTheme(style: styleTheme)
+    }
+    
+    @IBAction func changeTheme() {
+        calcTheme.changeTheme(current: styleTheme)
+        styleTheme = styleTheme == "light" ? "dark" : "light"
+        defaults.set(styleTheme, forKey: "style")
+    }
     
     func joinInLabel(_ appended: String, _ label: UILabel) {
         if label.text == "0" && calc.isNumber(appended) {
