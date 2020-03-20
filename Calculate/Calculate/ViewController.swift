@@ -127,16 +127,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultButton: BorderButton!
     @IBOutlet weak var imageTheme: UIImageView!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return calcTheme.preferredStatusBarStyle
+    }
+
     override func viewDidLoad() {
         styleTheme = defaults.string(forKey: "style") ?? "dark"
         defaults.set(styleTheme, forKey: "style")
         
         calcTheme.vc = self
         calcTheme.setTheme(style: styleTheme)
+        
+        swipeObserver()
     }
     
     @IBAction func changeTheme() {
         calcTheme.changeTheme(current: styleTheme)
+        setNeedsStatusBarAppearanceUpdate()
         styleTheme = styleTheme == "light" ? "dark" : "light"
         defaults.set(styleTheme, forKey: "style")
     }
@@ -263,8 +270,19 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func swipeObserver() {
+        resultLabel.isUserInteractionEnabled = true
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(removeLastInResultLabel))
+        rightSwipe.direction = .right
+        self.resultLabel.addGestureRecognizer(rightSwipe)
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(removeLastInResultLabel))
+        leftSwipe.direction = .left
+        self.resultLabel.addGestureRecognizer(leftSwipe)
+    }
 
-    @IBAction func removeLastInResultLabel() {
+    @objc func removeLastInResultLabel() {
         if errorStatus == true || resultStatus == true { return }
         guard let count = resultLabel.text?.count else { return }
         guard let number = resultLabel.text else { return }

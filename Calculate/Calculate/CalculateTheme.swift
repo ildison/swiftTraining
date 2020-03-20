@@ -67,12 +67,20 @@ enum Theme: String {
             case .dark:     return UIUserInterfaceStyle.dark
         }
     }
+    @available(iOS 13.0, *)
+    var statusBarTheme: UIStatusBarStyle {
+        switch self {
+            case .light:    return .darkContent
+            case .dark:     return .lightContent
+        }
+    }
 }
 
 class CalculateTheme {
     
     var vc: ViewController?
-    
+    var preferredStatusBarStyle: UIStatusBarStyle = .lightContent
+
     func changeTheme(current style: String) {
         let currentTheme = Theme(rawValue: style)
         switch currentTheme {
@@ -87,7 +95,6 @@ class CalculateTheme {
     
     func setTheme(style: String) {
         guard let theme = Theme(rawValue: style) else { return }
-        print(theme)
         setTheme(theme: theme)
     }
     
@@ -108,6 +115,9 @@ class CalculateTheme {
         vc?.imageTheme.image = theme.imageTheme
         if #available(iOS 13.0, *) {
             vc?.overrideUserInterfaceStyle = theme.userInterfaceStyle
+        }
+        if #available(iOS 13.0, *) {
+            preferredStatusBarStyle = theme.statusBarTheme
         }
     }
 }

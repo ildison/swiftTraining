@@ -400,12 +400,6 @@ Unicode: U+002B, UTF-8: 2B</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJx-xq-URr">
-                                <rect key="frame" x="27" y="159.5" width="321" height="76.5"/>
-                                <connections>
-                                    <action selector="removeLastInResultLabel" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1Y-Cu-FdP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxt-Ye-za5">
                                 <rect key="frame" x="27" y="122.5" width="35" height="36"/>
                                 <constraints>
@@ -424,11 +418,8 @@ Unicode: U+002B, UTF-8: 2B</string>
                         <color key="backgroundColor" red="0.152883380651474" green="0.14421705901622772" blue="0.36075893044471741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="top" secondItem="SHG-LY-7ww" secondAttribute="bottom" constant="8" id="4iG-sF-p7S"/>
-                            <constraint firstItem="wJx-xq-URr" firstAttribute="centerY" secondItem="4V3-lE-uti" secondAttribute="centerY" id="4im-pn-Qvy"/>
                             <constraint firstItem="SHG-LY-7ww" firstAttribute="leading" secondItem="Gxt-Ye-za5" secondAttribute="trailing" constant="5" id="CbJ-Cx-KZ4"/>
-                            <constraint firstItem="wJx-xq-URr" firstAttribute="leading" secondItem="4V3-lE-uti" secondAttribute="leading" id="Ejf-ge-flC"/>
                             <constraint firstItem="c2M-CH-0VA" firstAttribute="top" secondItem="4V3-lE-uti" secondAttribute="bottom" constant="8" id="HbK-t9-UCv"/>
-                            <constraint firstItem="wJx-xq-URr" firstAttribute="trailing" secondItem="4V3-lE-uti" secondAttribute="trailing" id="Ncs-fa-82C"/>
                             <constraint firstItem="4V3-lE-uti" firstAttribute="trailing" secondItem="c2M-CH-0VA" secondAttribute="trailing" id="NwQ-ll-KLt"/>
                             <constraint firstItem="BfB-Sj-viQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="RIF-IO-7Sd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfB-Sj-viQ" secondAttribute="trailing" constant="26" id="UjH-FR-WXn"/>
@@ -441,7 +432,6 @@ Unicode: U+002B, UTF-8: 2B</string>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BfB-Sj-viQ" secondAttribute="bottom" constant="20" id="gcx-ue-2I4"/>
                             <constraint firstItem="2kb-Le-ENJ" firstAttribute="bottom" secondItem="Gxt-Ye-za5" secondAttribute="bottom" id="pqM-yF-Z2w"/>
                             <constraint firstItem="2kb-Le-ENJ" firstAttribute="trailing" secondItem="Gxt-Ye-za5" secondAttribute="trailing" id="qne-Ma-dmm"/>
-                            <constraint firstItem="wJx-xq-URr" firstAttribute="height" secondItem="4V3-lE-uti" secondAttribute="height" id="rwy-7Q-uWy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
