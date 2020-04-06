@@ -13,6 +13,7 @@
 		1A3D496523F581A300F83312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D496423F581A300F83312 /* Assets.xcassets */; };
 		1A3D496823F581A300F83312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D496623F581A300F83312 /* LaunchScreen.storyboard */; };
 		1AA4F2BC23FABB6B005DFF81 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4F2BB23FABB6B005DFF81 /* BorderButton.swift */; };
+		1F56D3FF243B66AC00180244 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D3FE243B66AC00180244 /* Calculate.swift */; };
 		1FBBE52E2418F3D700C8D24C /* CalculateTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBE52D2418F3D700C8D24C /* CalculateTheme.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1A3D496723F581A300F83312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3D496923F581A300F83312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA4F2BB23FABB6B005DFF81 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		1F56D3FE243B66AC00180244 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		1FBBE52D2418F3D700C8D24C /* CalculateTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				1AA4F2BB23FABB6B005DFF81 /* BorderButton.swift */,
 				1A3D495D23F581A300F83312 /* AppDelegate.swift */,
 				1A3D495F23F581A300F83312 /* ViewController.swift */,
+				1F56D3FE243B66AC00180244 /* Calculate.swift */,
 				1FBBE52D2418F3D700C8D24C /* CalculateTheme.swift */,
 				1A3D496123F581A300F83312 /* Main.storyboard */,
 				1A3D496423F581A300F83312 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				1FBBE52E2418F3D700C8D24C /* CalculateTheme.swift in Sources */,
 				1A3D496023F581A300F83312 /* ViewController.swift in Sources */,
 				1A3D495E23F581A300F83312 /* AppDelegate.swift in Sources */,
+				1F56D3FF243B66AC00180244 /* Calculate.swift in Sources */,
 				1AA4F2BC23FABB6B005DFF81 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
