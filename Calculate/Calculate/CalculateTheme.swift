@@ -76,12 +76,12 @@ enum Theme: String {
     }
 }
 
-class CalculateTheme {
+struct CalculateTheme {
     
     var vc: ViewController?
     var preferredStatusBarStyle: UIStatusBarStyle = .lightContent
 
-    func changeTheme(current style: String) {
+    mutating func changeTheme(current style: String) {
         let currentTheme = Theme(rawValue: style)
         switch currentTheme {
             case .dark:
@@ -93,12 +93,12 @@ class CalculateTheme {
         }
     }
     
-    func setTheme(style: String) {
+    mutating func setTheme(style: String) {
         guard let theme = Theme(rawValue: style) else { return }
         setTheme(theme: theme)
     }
     
-    private func setTheme(theme: Theme) {
+    private mutating func setTheme(theme: Theme) {
         vc?.background.backgroundColor = theme.backgroundColor
         vc?.resultLabel.textColor = theme.numbersResultElementColor
         vc?.elementsLabel.textColor = theme.numbersResultElementColor
